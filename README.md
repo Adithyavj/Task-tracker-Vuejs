@@ -100,3 +100,11 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Project Structure
+The index.html file in the public folder is the single page loaded in the browser which has div with id app in it's body. All vue components are rendered in this div tag.
+
+In the src folder, there is a main.js file. This is the entry point to a vue.js app.
+We mount App to the div with id #app inside the main.js file.
+App.vue is the root component.
+Other components used in the app will be declared in the components part in App.vue
