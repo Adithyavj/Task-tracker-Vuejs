@@ -1,10 +1,11 @@
 <template>
-    <div v-if="showAddTask">
-      <AddTask @add-task="addTask" />
-    </div>
-    <Tasks @delete-task="deleteTask"
-    @toggle-reminder="toggleReminder" 
-    :tasks="tasks" />
+    <AddTask 
+        v-show="showAddTask" 
+        @add-task="addTask" />
+    <Tasks 
+        @delete-task="deleteTask"
+        @toggle-reminder="toggleReminder" 
+        :tasks="tasks" />
 </template>
 
 <script>
